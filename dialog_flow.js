@@ -3,7 +3,7 @@ const dialogflow = require('dialogflow');
 const fetch = require('node-fetch');
 
 const sessionClient = new dialogflow.SessionsClient();
-const projectId = 'Y105644911645370616526'; // Replace with your Dialogflow project ID
+const projectId = 'YOUR_PROJECT_ID'; // Replace with your Dialogflow project ID
 
 async function detectIntent(query, sessionId) {
   const sessionPath = sessionClient.sessionPath(projectId, sessionId);
